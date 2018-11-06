@@ -1,0 +1,1 @@
+node-sass  "./public_html/scss/" -o "./public_html/css/"

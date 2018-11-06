@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01-oct-2018, 10:24:09
+    Author     : Alumno
+*/
+
+
+.button {
+    border: none;
+    color: white;
+   
+    text-align: center;
+   /** border: 1px solid #003399; **/
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+
+@each $nombre, $color in $colores  {
+    .button--#{$nombre} {
+        background-color: $color;  
+    }
+}
+
+@each $nombre, $size in $sizes  {
+    .button--#{$nombre} {
+       font-size: $size;  
+    }
+}

@@ -1,8 +1,35 @@
 {
-    "name": "Porcshe",
-    "version": "1.0.0",
-    "keywords": ["util", "functional", "server", "client", "browser"],
-    "author": "Alumno",
-    "contributors": [],
-    "dependencies": {}
+  "name": "package.json",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "Alumno",
+  "contributors": [],
+  "dependencies": {
+    "onchange": "^5.0.2"
+  },
+  "description": "",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "bash deploy/deploy.sh",
+    "onchange":"bash deploy/onchange.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kebetrub/Porsche.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kebetrub/Porsche/issues"
+  },
+  "homepage": "https://github.com/kebetrub/Porsche#readme"
 }

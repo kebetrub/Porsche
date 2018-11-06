@@ -1,0 +1,233 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 05-nov-2018, 9:14:26
+    Author     : Alumno
+*/
+
+
+.grid {
+display: grid;
+}
+.grid--2col {
+grid-template-areas: 'area1 area2';
+}
+.grid--3col {
+grid-template-areas: 'area1 area2 area3';
+}
+
+@media (max-width: 1150px) {
+.grid--3col {
+grid-template-areas: 'area1 area2'
+                    'area3 . ';
+}
+}
+
+
+@media (max-width: 770px) {
+.grid--3col {
+grid-template-areas: 'area1' 
+                    'area2' 
+                    'area3';
+}
+}
+
+.grid--1double-3col {
+    grid-template-areas: 'area1 area1 area2 area3 area4';
+}
+
+@media(max-width: 1050px) {
+.grid--1double-3col {
+    grid-template-areas: 'area1 area1 area2 area3'
+                    'area4 .  .  .';
+}
+}
+
+@media(max-width: 850px) {
+.grid--1double-3col {
+    grid-template-areas: 'area1 area1 area2 '
+                    'area3 area4 . ';
+}
+}
+
+@media(max-width: 610px) {
+.grid--1double-3col {
+    grid-template-areas: 'area1 area1'
+                        'area2 .'
+                        'area3 .'
+                        'area4 .';
+}
+}
+
+.grid--4col {
+grid-template-areas: 'area1 area2 area3 area4';
+}
+
+@media(max-width: 1150px) {
+.grid--4col {
+    grid-template-areas: 'area1 area2 area3'
+                    'area4 .  . ';
+}
+}
+
+@media(max-width: 850px) {
+.grid--4col {
+    grid-template-areas: 'area1 area2 '
+                    'area3 area4  ';
+}
+}
+@media(max-width: 650px) {
+.grid--4col {
+    grid-template-areas: 'area1'
+                        'area2'
+                        'area3'
+                        'area4';
+}
+}
+
+.grid--4col-6files {
+    grid-template-areas: 'area1 area2 area3 area4'
+                         'area5 area6 area7 area8'
+                         'area9 area10 area11 area12'
+                         'area13 area14 area15 area16'
+                         'area17 . . area18'
+                         '. . . area19';
+}
+
+
+.grid--5col {
+grid-template-areas: 'area1 area2 area3 area4 area5';
+}
+
+@media(max-width: 1300px) {
+.grid--5col {
+    grid-template-areas: 'area1 area2 area3 area4'
+                    'area5 . . .';
+}
+}
+
+@media(max-width: 1050px) {
+.grid--5col {
+    grid-template-areas: 'area1 area2 area3'
+                    'area4 area5 . ';
+}
+}
+
+
+@media(max-width: 850px) {
+.grid--5col {
+    grid-template-areas: 'area1 area2'
+                    'area3 area4'
+                    'area5 . ';
+}
+}
+
+@media(max-width: 610px) {
+.grid--5col {
+    grid-template-areas: 'area1'
+                        'area2'
+                        'area3'
+                        'area4'
+                        'area5';
+}
+}
+
+
+
+
+
+.grid__area1 {
+grid-area: area1;
+}
+.grid__area2 {
+grid-area: area2;
+}
+.grid__area3 {
+grid-area: area3;
+}
+.grid__area4 {
+grid-area: area4;
+}
+.grid__area5 {
+grid-area: area5;
+}
+
+.grid__area6 {
+grid-area: area6;
+}
+.grid__area7 {
+grid-area: area7;
+}
+.grid__area8 {
+grid-area: area8;
+}
+.grid__area9 {
+grid-area: area9;
+}
+.grid__area10 {
+grid-area: area10;
+}
+
+.grid__area11 {
+grid-area: area11;
+}
+.grid__area12 {
+grid-area: area12;
+}
+.grid__area13 {
+grid-area: area13;
+}
+.grid__area14 {
+grid-area: area14;
+}
+.grid__area15 {
+grid-area: area15;
+}
+
+.grid__area16 {
+grid-area: area16;
+}
+.grid__area17 {
+grid-area: area17;
+}
+.grid__area18 {
+grid-area: area18;
+}
+.grid__area19 {
+grid-area: area19;
+}
+.grid__area20 {
+grid-area: area20;
+}
+
+.grid--cuadrado{
+grid-template-areas :
+	'area1 area3'
+	'area2 area4';
+}
+
+
+
+
+
+.grid__item1 { grid-area: headerL; }
+.grid__item2 { grid-area: center; }
+.grid__item3 { grid-area: center2; }
+.grid__item4 { grid-area: headerR; }
+.grid__item5 { grid-area: main; }
+.grid__item6 { grid-area: footerleft; }
+.grid__item7 { grid-area: footerleft2; }
+.grid__item8 { grid-area: footerrigth; }
+.grid__item9 { grid-area: footerrigth2; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'headerL headerL center center2 headerR headerR'
+        'headerL headerL main main headerR headerR'
+        'footerleft footerleft2 main main footerrigth footerrigth2';
+
+}

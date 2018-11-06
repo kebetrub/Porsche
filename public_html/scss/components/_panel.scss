@@ -1,0 +1,40 @@
+.panel {
+    text-align: center;
+    width: 400px;
+    border-radius: 8px 8px 8px 8px;
+    font-family: arial;
+}
+
+
+
+.panel__head {
+    height: 40px;
+    border-radius: 8px 8px 0px 0px ;
+
+}
+
+.panel__body {
+    height: 40px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+
+@each $nombre, $color in $colores  {
+    .panel--#{$nombre} {
+
+    }
+
+    .panel__body--#{$nombre} {
+        background: white;
+        border: solid darken($color,50%) 1px;
+
+    }
+
+    .panel__head--#{$nombre} {
+        background-color: $color;
+        color:white;
+        border: solid darken($color,50%) 1px;
+    }
+}
+

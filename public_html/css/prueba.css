@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22-oct-2018, 9:22:20
+    Author     : Alumno
+*/
+
+
+#example1 {
+    background: url(mountain.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#example2 {
+    background: url(src="imagenes/718.png");
+    background-repeat: no-repeat;
+    background-size: 300px 100px;
+}

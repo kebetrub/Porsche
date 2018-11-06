@@ -1,0 +1,1 @@
+onchange -v ./scss/**/*.scss ./css/*.css --npm run deploy

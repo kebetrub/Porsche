@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-sep-2018, 8:58:07
+    Author     : Alumno
+*/
+
+
+
+
+
+
+
+.img__asistente {
+
+    border: none;
+    display: inline-block;
+    margin: -5px;
+}
+
+.img__asistente-tamaño {
+    height: 250px;
+}
+
+.img__span {
+    text-align: center;
+    font-family: arial;
+    font-size: 22px;
+}
